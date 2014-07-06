@@ -16,10 +16,28 @@ public class DarkThemeActivity extends Activity {
 
         setContentView(R.layout.activity_dark);
 
-        NumberPicker np = (NumberPicker) findViewById(R.id.numberPicker);
-        np.setMaxValue(20);
-        np.setMinValue(0);
-        np.setFocusable(true);
-        np.setFocusableInTouchMode(true);
+        NumberPicker sp = (NumberPicker) findViewById(R.id.secondPicker);
+        sp.setMaxValue(60);
+        sp.setMinValue(5);
+        sp.setFocusable(true);
+        sp.setFocusableInTouchMode(true);
+        
+        NumberPicker mp = (NumberPicker) findViewById(R.id.minutePicker);
+        mp.setMaxValue(60);
+        mp.setMinValue(0);
+        mp.setFocusable(true);
+        mp.setFocusableInTouchMode(true);
+        
+        NumberPicker hp = (NumberPicker) findViewById(R.id.hourPicker);
+        hp.setMaxValue(24);
+        hp.setMinValue(0);
+        hp.setFocusable(true);
+        hp.setFocusableInTouchMode(true);
+        
+        NumberPicker dp = (NumberPicker) findViewById(R.id.dayPicker);
+        dp.setMaxValue(10);
+        dp.setMinValue(0);
+        dp.setFocusable(true);
+        dp.setFocusableInTouchMode(true);
     }
 }
